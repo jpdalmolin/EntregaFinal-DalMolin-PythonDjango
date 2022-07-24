@@ -30,4 +30,4 @@ Creacion de post/blog desde form y desde panel de admin.Logeado se puede crear, 
 Link de video con la pagina totalmente funcionando https://drive.google.com/file/d/1GtsfxdVZ2xNYw5bYbkvKZyEs1avKORGz/view (recomiendo descargar!)
 
 
-Saludos, Juan Pablo
+Juan Pablo
