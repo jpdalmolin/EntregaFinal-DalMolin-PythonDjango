@@ -1,0 +1,21 @@
+{% extends "AppCoder/padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+<title class="text-center">Deslogueado</title>
+<body class="text-center">
+    <h1 class="text-justify">Deslogueado</h1>
+    <form action=""method="POST">
+    {% csrf_token %}
+
+    {{form.as_p}}
+
+    <a class="btn btn-info" href="{% url 'inicio' %}">Volver al inicio</a>
+ 
+        <a class="btn btn-success" href="login">Ir a Login</a>
+        
+    
+
+    </form>
+</body>
+{% endblock %}

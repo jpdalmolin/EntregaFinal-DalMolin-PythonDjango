@@ -1,0 +1,26 @@
+{% extends "AppCoder/padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<title>Lista de Posts</title> 
+<ul>
+    {% for posts in object_list %}
+
+    <li>
+        <h4>Titulo : {{posts.title}}</h4>
+        <p>Editado el : {{posts.updated}}</p>
+        <p>Por: {{posts.author}}</p>
+        <p>
+            <a class="btn btn-info" href="{% url 'blogDetalle' posts.id %}">Ver</a>
+            
+        </p>
+    </li>
+    {% endfor %}
+    {%if request.user.is_authenticated %}
+<a class="btn btn-success" href="{% url 'blogFormulario' %}">Nuevo Post</a>
+    {% endif %}
+<br><br>
+<a class="btn btn-primary" href="{% url 'blog' %}">Ver todos los post</a>
+</ul>
+{% endblock %}

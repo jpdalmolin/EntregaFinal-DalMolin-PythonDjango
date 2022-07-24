@@ -1,0 +1,20 @@
+{% extends "AppCoder/padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+{% for animales in animal %}
+<title>Animal Detalle</title> 
+
+<body>
+    <h3> Nombre del Animal: <i> {{animales.nombre}}</i></h3>
+    <h4> Tipo de animal:<i> {{animales.tipo}}</i></h4>
+    <h5> Nacimiento : <i> {{animales.fechaDeNacimiento}}</i></h5>
+     <br><br>
+    
+   
+</body>
+{% endfor %}
+<p>
+     <a class="btn btn-primary" href="{% url 'List' %}">Ir a lista de Mascotas</a>
+ </p>
+{% endblock %}
