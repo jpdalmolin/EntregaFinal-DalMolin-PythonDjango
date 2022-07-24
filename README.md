@@ -1,7 +1,7 @@
 # EntregaFinal-DalMolin-PythonDjango
 Realizado en curso Python CoderHouse
 
-Web con PythonDjango entrega Final CoderHouse
+Web con PythonDjango entrega Final CoderHouse realizada en solitario por Dal Molin Juan Pablo
 
 Para probar Escribir en terminal python manage.py runserver para dar de alta la web!
 
